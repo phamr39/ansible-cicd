@@ -1,0 +1,34 @@
+---
+#
+# Tasks to be applied to runner servers
+#
+- name: Check connectivity
+  ping:
+    data: alive
+  tags: check
+
+#
+# Tasks to install docker
+#
+
+#
+# Tasks to install docker compose
+#
+
+#
+# Tasks to install gitlab runner
+#
+
+#
+# Tasks to register gitlab runner to specific project
+#
+
+#
+# Tasks to edit config gitlab runner
+#
+
+#
+# Tasks to restart gitlab runner after register
+#
+
+...

@@ -1,0 +1,20 @@
+---
+#
+# Tasks to be applied to newcj1 servers
+#
+- name: Check connectivity
+  ping:
+    data: alive
+  tags: check
+
+#
+# Tasks to copy code from zip file to target host
+#
+- name: Copy zipped file to target host
+  synchronize:
+    src: /path/on/current_machine
+    dest: /path/on/runner
+  tags: deploy
+
+...
+# scp -i "hdbank_task_key.pem" ./hdbank-new-cj1-webapp-master.zip ubuntu@ec2-35-170-185-154.compute-1.amazonaws.com:/home/ubuntu/hdbank-new-cj1-webapp-master.zip

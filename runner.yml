@@ -1,0 +1,9 @@
+---
+- hosts: runner
+  roles:
+    - common
+    - runner
+
+# Associate further roles to servers in runner group in this file...
+
+...

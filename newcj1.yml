@@ -1,0 +1,9 @@
+---
+- hosts: newcj1
+  roles:
+    - common
+    - newcj1
+
+# Associate further roles to servers in runner group in this file...
+
+...
